@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="stylesheets/style.css"/>
+        <title>Make an easy Schedule</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="banner">Scheduler</div>
+    <div class="container">
+    <div class="search_box">Search by name or ID</div><div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>
+    <div class="schedule">
+        <table class="edt" cellspacing="0">
+        <thead>
+          <tr class="odd">
+            <td><br /><br /></td>
+            <td class="day">MONDAY</td>
+            <td class="day">TUESDAY</td>
+            <td class="day">WEDNESDAY</td>
+            <td class="day">THURSDAY</td>
+            <td class="day">FRIDAY</td>
+            <td class="day">SATURDAY</td>
+            <td class="day">SUNDAY</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="even">
+            <td class="free hour"><!-- 1<br /> -->8:10 - 9:00</td>
+            <!-- <td class="class course" id="mon1">An introduction to Taiwanese culture and history<br />33100</td> -->
+            <td class="free" id="mon1"></td>
+            <td class="free" id="tue1"></td>
+            <td class="free" id="wed1"></td>
+            <td class="free" id="thu1"></td>
+            <td class="free" id="fri1"></td>
+            <td class="free" id="sat1"></td>
+            <td class="free" id="sun1"></td>
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- 2<br /> -->9:10 - 10:00</td>
+            <!-- <td class="class course" id="mon2">An introduction to Taiwanese culture and history<br />33100</td> -->
+            <td class="free" id="mon2"></td>
+            <td class="free" id="tue2"></td>
+            <td class="free" id="wed2"></td>
+            <td class="free" id="thu2"></td>
+            <td class="free" id="fri2"></td>
+            <td class="free" id="sat2"></td>
+            <td class="free" id="sun2"></td>
+          </tr>
+          <tr class="even">
+            <td class="free hour"><!-- 3<br /> -->10:10 - 11:00</td>
+            <td class="free" id="mon3"></td>
+            <td class="free" id="tue3"></td>
+            <td class="free" id="wed3"></td>
+            <td class="free" id="thu3"></td>
+            <td class="free" id="fri3"></td>
+            <td class="free" id="sat3"></td>
+            <td class="free" id="sun3"></td>
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- 4<br /> -->11:10 - 12:00</td>
+            <td class="free" id="mon4"></td>
+            <td class="free" id="tue4"></td>
+            <td class="free" id="wed4"></td>
+            <td class="free" id="thu4"></td>
+            <td class="free" id="fri4"></td>
+            <td class="free" id="sat4"></td>
+            <td class="free" id="sun4"></td>
+          </tr>
+          <tr class="even">
+            <td class="free hour"><!-- C<br /> -->12:10 - 13:00</td>
+            <td class="free" id="mon5"></td>
+            <td class="free" id="tue5"></td>
+            <td class="free" id="wed5"></td>
+            <td class="free" id="thu5"></td>
+            <td class="free" id="fri5"></td>
+            <td class="free" id="sat5"></td>
+            <td class="free" id="sun5"></td>
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- D<br /> -->13:10 - 14:00</td>
+            <td class="free" id="mon6"></td>
+            <td class="free" id="tue6"></td>
+            <td class="free" id="wed6"></td>
+            <td class="free" id="thu6"></td>
+            <td class="free" id="fri6"></td>
+            <td class="free" id="sat6"></td>
+            <td class="free" id="sun6"></td>
+          </tr>
+          <tr class="even">
+            <td class="free hour"><!-- 5<br /> -->14:10 - 15:00</td>
+            <td class="free" id="mon7"></td>
+            <td class="free" id="tue7"></td>
+            <td class="free" id="wed7"></td>
+            <td class="free" id="thu7"></td>
+            <td class="free" id="fri7"></td>
+            <td class="free" id="sat7"></td>
+            <td class="free" id="sun7"></td>
+            <!-- <td class="class course" id="wed7">How to exploit innovativeness<br />24202</td> -->
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- 6<br /> -->15:10 - 16:00</td>
+            <td class="free" id="mon8"></td>
+            <td class="free" id="tue8"></td>
+            <td class="free" id="wed8"></td>
+            <td class="free" id="thu8"></td>
+            <td class="free" id="fri8"></td>
+            <td class="free" id="sat8"></td>
+            <td class="free" id="sun8"></td>
+<!--             <td class="class course" id="wed8">How to exploit innovativeness<br />24202</td>-->
+            </tr>
+          <tr class="even">
+            <td class="free hour"><!-- 7<br /> -->16:10 - 17:00</td>
+            <td class="free" id="mon9"></td>
+            <td class="free" id="tue9"></td>
+            <td class="free" id="wed9"></td>
+            <td class="free" id="thu9"></td>
+            <td class="free" id="fri9"></td>
+            <td class="free" id="sat9"></td>
+            <td class="free" id="sun9"></td>
+            <!-- <td class="class course" id="wed9">How to exploit innovativeness<br />24202</td> -->
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- 8<br /> -->17:10 - 18:00</td>
+            <td class="free" id="mon10"></td>
+            <td class="free" id="tue10"></td>
+            <td class="free" id="wed10"></td>
+            <td class="free" id="thu10"></td>
+            <td class="free" id="fri10"></td>
+            <td class="free" id="sat10"></td>
+            <td class="free" id="sun10"></td>
+          </tr>
+          <tr class="even">
+            <td class="free hour"><!-- E<br /> -->18:10 - 19:00</td>
+            <td class="free" id="mon11"></td>
+            <td class="free" id="tue11"></td>
+            <td class="free" id="wed11"></td>
+            <td class="free" id="thu11"></td>
+            <td class="free" id="fri11"></td>
+            <td class="free" id="sat11"></td>
+            <td class="free" id="sun11"></td>
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- F<br /> -->19:10 - 20:00</td>
+            <td class="free" id="mon12"></td>
+            <td class="free" id="tue12"></td>
+            <td class="free" id="wed12"></td>
+            <td class="free" id="thu12"></td>
+            <td class="free" id="fri12"></td>
+            <td class="free" id="sat12"></td>
+            <td class="free" id="sun12"></td>
+            <!-- <td class="class course" id="fri12">IT for networked organizations<br />12413<div class="details timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></td> -->
+          </tr>
+          <tr class="even">
+            <td class="free hour"><!-- G<br /> -->20:10 - 21:00</td>
+            <td class="free" id="mon13"></td>
+            <td class="free" id="tue13"></td>
+            <td class="free" id="wed13"></td>
+            <td class="free" id="thu13"></td>
+            <td class="free" id="fri13"></td>
+            <td class="free" id="sat13"></td>
+            <td class="free" id="sun13"></td>
+            <!-- <td class="class course" id="fri13">IT for networked organizations<br />12413<div class="details timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></td> -->
+          </tr>
+          <tr class="odd">
+            <td class="free hour"><!-- H<br /> -->21:10 - 22:00</td>
+            <td class="free" id="mon14"></td>
+            <td class="free" id="tue14"></td>
+            <td class="free" id="wed14"></td>
+            <td class="free" id="thu14"></td>
+            <td class="class course" id="fri14">IT for networked organizations<br />12413
+                <div class="details timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></td>
+            <!-- <td class="free" id="fri14"></td> -->
+            <td class="free" id="sat14"></td>
+            <td class="free" id="sun14"></td>
+            
+          </tr>
+        </tbody>
+      </table>
+      </div></div>
+      <div class="selected_course_list">
+            <div class="course_list_title">Selected courses</div>
+                <ul class="course_list" id="course_list">
+                    <li class="course_item course">IT for networked organizations<div class="details non_timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></li>
+                    <li class="course_item course">How to exploit innovativeness</li>
+                    <li class="course_item course">An introduction to Taiwanese culture and history</li>
+                    <li class="total_credits">TOTAL CREDITS : 8</li>
+                    <li class="total_hours">TOTAL HOURS/WEEK : 8</li>
+                </ul>
+            </div>
+    <script>
+        $(".course").mouseover(function() {
+                $(this).children(".details").show();
+                }).mouseout(function() {
+                $(this).children(".details").hide();
+                });
+    </script>
+</body>
+</html>
