@@ -1,0 +1,93 @@
+<head>
+  <title>Scheduler</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Scheduler</h1>
+
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+        <h2>You are logged in :)</h2>
+        <h2>Available classes:</h2>
+        <ul>
+          {{#each courses}}
+            {{>coursedesc}}
+          {{/each}}
+        </ul>
+        <h2>Timetable:</h2>
+        <table>
+          <tr>
+            <th>Hour</th>
+            <th>Mon.</th>
+            <th>Tue.</th>
+            <th>Wed.</th>
+            <th>Thu.</th>
+            <th>Fri.</th>
+            <th>Sat.</th>
+            <th>Sun.</th>
+          </tr>
+          <tr>
+            <td>A</td><td>MonA</td>
+          </tr>
+          <tr>
+            <td>B</td><td></td>
+          </tr>
+          <tr>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>G</td>
+          </tr>
+          <tr>
+            <td>H</td>
+          </tr>
+        </table>
+      {{/if}}
+
+      {{#unless currentUser}}
+        <h2>Please log in</h2>
+      {{/unless}}
+    </header>
+
+  </div>
+</body>
+
+<template name="coursedesc">
+<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTimeH}}:{{startTimeM}}, ends at {{endTimeH}}:{{endTimeM}}) {{#if checked}}(class selected){{/if}} <input type="checkbox" checked="{{checked}}" class="toggle-checked" /></li>
+</template>
