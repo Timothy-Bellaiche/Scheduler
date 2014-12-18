@@ -1,6 +1,6 @@
 Courses = new Mongo.Collection("courses");
 Courses.initEasySearch('courseName', {
-  'limit' : 10
+  'limit' : 20
 });
 
 if (Meteor.isClient) {
