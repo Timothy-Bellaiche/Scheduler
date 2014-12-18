@@ -202,6 +202,9 @@
           descriptionBox.className = "details timetable";
           descriptionBox.innerHTML = coursename+classroom+"DETAILS";
           document.getElementById(start).className = "class course";
+          document.getElementById(start).style.borderLeft = "2px solid white";
+          document.getElementById(start).style.borderRight = "2px solid white";
+          document.getElementById(start).style.borderTop = "2px solid white";
           document.getElementById(start).appendChild(descriptionBox);
 
           var descriptionBox = document.createElement('div');
@@ -210,12 +213,17 @@
           document.getElementById(middle).className = "class course";
           document.getElementById(middle).innerHTML = coursename+"\n"+classroom;
           document.getElementById(middle).appendChild(descriptionBox);
+          document.getElementById(middle).style.borderLeft = "2px solid white";
+          document.getElementById(middle).style.borderRight = "2px solid white";
 
           var descriptionBox = document.createElement('div');
           descriptionBox.className = "details timetable";
           descriptionBox.innerHTML = coursename + classroom + "DETAILS";
           document.getElementById(end).className = "class course";
           document.getElementById(end).appendChild(descriptionBox);
+          document.getElementById(end).style.borderLeft = "2px solid white";
+          document.getElementById(end).style.borderRight = "2px solid white";
+          document.getElementById(end).style.borderBottom = "2px solid white";
        $(".course").mouseover(function() {
          $(this).children(".details").show();
          }).mouseout(function() {
