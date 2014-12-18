@@ -202,13 +202,11 @@
                 }).mouseout(function() {
                 $(this).children(".details").hide();
                 });
-    </script>
 
-    <script>
         function functionToggle(element,start,middle,end,coursename,classroom) {
           if(element.checked){
           var descriptionBox = document.createElement('div');
-          descriptionBox.class = "class course";
+          descriptionBox.class = "details timetable";
           descriptionBox.innerHTML = coursename+ classroom;
           document.getElementById(start).className = "class course";
           document.getElementById(start).appendChild(descriptionBox);
@@ -227,7 +225,6 @@
           document.getElementById(middle).innerHTML = "";
           document.getElementById(end).className = "free";
           document.getElementById(end).removeChild(descriptionBox);
-
           }
         }
     </script>
