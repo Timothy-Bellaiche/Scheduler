@@ -176,7 +176,7 @@
             <td class="free" id="fri21"></td>
             <!--<td class="class course" id="fri21">IT for networked organizations<br>12413-->
                 <!--<div class="details timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></td>-->
-            <!-- <td class="free" id="fri14"></td> -->
+            <td class="free" id="fri14"></td>
             <td class="free" id="sat21"></td>
             <td class="free" id="sun21"></td>
             
@@ -197,26 +197,42 @@
                 </ul>
             </div>
     <script>
-        $(".course").mouseover(function() {
-                $(this).children(".details").show();
-                }).mouseout(function() {
-                $(this).children(".details").hide();
-                });
-    </script>
-
-    <script>
         function functionToggle(element,start,middle,end,coursename,classroom) {
           if(element.checked){
+          var descriptionBox = document.createElement('div');
+          descriptionBox.className = "details timetable";
+          descriptionBox.innerHTML = coursename+classroom+"DETAILS";
           document.getElementById(start).className = "class course";
+          document.getElementById(start).appendChild(descriptionBox);
+
+          var descriptionBox = document.createElement('div');
+          descriptionBox.className = "details timetable";
+          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
           document.getElementById(middle).className = "class course";
           document.getElementById(middle).innerHTML = coursename+"\n"+classroom;
+          document.getElementById(middle).appendChild(descriptionBox);
+
+          var descriptionBox = document.createElement('div');
+          descriptionBox.className = "details timetable";
+          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
           document.getElementById(end).className = "class course";
-          }
+          document.getElementById(end).appendChild(descriptionBox);
+       $(".course").mouseover(function() {
+         $(this).children(".details").show();
+         }).mouseout(function() {
+         $(this).children(".details").hide();
+         });
+      }
           else{
-          document.getElementById(start).className = "free";
-          document.getElementById(middle).className = "free";
-          document.getElementById(middle).innerHTML = "";
-          document.getElementById(end).className = "free";
+            document.getElementById(start).className = "free";
+            document.getElementById(start).removeChild(document.getElementById(start).firstChild);  
+            document.getElementById(start).innerHTML = "";
+            document.getElementById(middle).className = "free";
+            document.getElementById(middle).removeChild(document.getElementById(middle).firstChild);
+            document.getElementById(middle).innerHTML = "";
+            document.getElementById(end).className = "free";
+            document.getElementById(end).removeChild(document.getElementById(end).firstChild);
+            document.getElementById(end).innerHTML = "";
           }
         }
     </script>
