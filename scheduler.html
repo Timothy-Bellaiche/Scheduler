@@ -237,6 +237,15 @@
               document.getElementById(position).className = "free";
               document.getElementById(position).removeChild(document.getElementById(position).firstChild);
               document.getElementById(position).innerHTML = "";
+              document.getElementById(position).style.borderLeft = "";
+              document.getElementById(position).style.borderRight = "";
+              if (position == start) {
+                document.getElementById(position).style.borderTop = borderstyle;
+              }
+              else if (position == end) {
+                document.getElementById(position).style.borderBottom = borderstyle;
+              }
+              else {}
             }
 
             toggleRemove(start);
