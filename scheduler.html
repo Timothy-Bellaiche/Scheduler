@@ -235,7 +235,7 @@
           else {
             function toggleRemove(position) {
               document.getElementById(position).className = "free";
-              document.getElementById(position).removeChild(document.getElementById(start).firstChild);
+              document.getElementById(position).removeChild(document.getElementById(position).firstChild);
               document.getElementById(position).innerHTML = "";
             }
 
