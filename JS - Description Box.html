@@ -207,24 +207,31 @@
           if(element.checked){
           var descriptionBox = document.createElement('div');
           descriptionBox.class = "details timetable";
-          descriptionBox.innerHTML = coursename+ classroom;
-          document.getElementById(start).className = "class course";
-          document.getElementById(start).appendChild(descriptionBox);
-          document.getElementById(middle).className = "class course";
-          document.getElementById(middle).innerHTML = coursename+"\n"+classroom;
-          document.getElementById(middle).appendChild(descriptionBox);
-          document.getElementById(end).className = "class course";
-          document.getElementById(end).appendChild(descriptionBox);
-          document.createElement('div').className = "details timetable";
-          }
+          descriptionBox.innerHTML = coursename+classroom+"DETAILS";
+          document.getElementById("start").className = "class course";
+          document.getElementById("start").appendChild(descriptionBox);
+          var descriptionBox = document.createElement('div');
+          descriptionBox.class = "details timetable";
+          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
+          document.getElementById("middle").className = "class course";
+          document.getElementById("middle").innerHTML = "coursename"+"\n"+"classroom";
+          document.getElementById("middle").appendChild(descriptionBox);
+          var descriptionBox = document.createElement('div');
+          descriptionBox.class = "details timetable";
+          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
+          document.getElementById("end").className = "class course";
+          document.getElementById("end").appendChild(descriptionBox);
+      }
           else{
-          document.getElementById(start).className = "free";
-          document.getElementById(start).removeChild(descriptionBox);
-          document.getElementById(middle).className = "free";
-          document.getElementById(middle).removeChild(descriptionBox);
-          document.getElementById(middle).innerHTML = "";
-          document.getElementById(end).className = "free";
-          document.getElementById(end).removeChild(descriptionBox);
+            document.getElementById("start").className = "free";
+            document.getElementById("start").removeChild(document.getElementById("start").firstChild);  
+            document.getElementById("start").innerHTML = "";
+            document.getElementById("middle").className = "free";
+            document.getElementById("middle").removeChild(document.getElementById("middle").firstChild);
+            document.getElementById("middle").innerHTML = "";
+            document.getElementById("end").className = "free";
+            document.getElementById("end").removeChild(document.getElementById("end").firstChild);
+            document.getElementById("end").innerHTML = "";
           }
         }
     </script>
