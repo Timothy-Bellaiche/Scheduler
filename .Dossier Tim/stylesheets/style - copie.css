@@ -73,11 +73,11 @@ body {
 }
 /* line 75, ../sass/style.scss */
 .schedule table tr.even td.free {
-  background-color: #737373;
+  background-color: #D4D4D4;
 }
 /* line 77, ../sass/style.scss */
 .schedule table tr.even td.free.even, .schedule table tr.even td.free:nth-child(2n) {
-  background-color: #737373;
+  background-color: #D4D4D4;
 }
 
 /* TABLE */
@@ -166,7 +166,7 @@ thead {
 .details {
   display: none;
   position: absolute;
-  border: 2px solid #737373;
+  border: 2px solid #D4D4D4;
   width: 400px;
   height: 200px;
   background-color: #ffffff;
@@ -177,7 +177,7 @@ thead {
 .details_on {
   display: block;
   position: absolute;
-  border: 2px solid #737373;
+  border: 2px solid #D4D4D4;
   width: 400px;
   height: 200px;
   background-color: #ffffff;
