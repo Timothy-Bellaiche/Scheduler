@@ -198,21 +198,21 @@
     <script>
         function functionToggle(element,start,middle,end,coursename,classroom,prof) {
 
-          if (element.checked){
+          if (element.checked) {
             var details = coursename + " " + classroom + " " + prof;
             var borderstyle = "2px solid white";
 
-            function toggleGod(position) {
+            function toggleAdd(position) {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
               descriptionBox.innerHTML = details;
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
               document.getElementById(position).style.borderRight = borderstyle;
-              if (position == start){
+              if (position == start) {
                 document.getElementById(position).style.borderTop = borderstyle;
               }
-              else if (position == end){
+              else if (position == end) {
                 document.getElementById(position).style.borderBottom = borderstyle;
               }
               else {
@@ -221,9 +221,9 @@
               document.getElementById(position).appendChild(descriptionBox);
             }
 
-            toggleGod(start);
-            toggleGod(middle);
-            toggleGod(end);
+            toggleAdd(start);
+            toggleAdd(middle);
+            toggleAdd(end);
 
             $(".course").mouseover(function() {
               $(this).children(".details").show();
@@ -232,16 +232,16 @@
               });
             }
 
-          else{
-            document.getElementById(start).className = "free";
-            document.getElementById(start).removeChild(document.getElementById(start).firstChild);  
-            document.getElementById(start).innerHTML = "";
-            document.getElementById(middle).className = "free";
-            document.getElementById(middle).removeChild(document.getElementById(middle).firstChild);
-            document.getElementById(middle).innerHTML = "";
-            document.getElementById(end).className = "free";
-            document.getElementById(end).removeChild(document.getElementById(end).firstChild);
-            document.getElementById(end).innerHTML = "";
+          else {
+            function toggleRemove(position) {
+              document.getElementById(position).className = "free";
+              document.getElementById(position).removeChild(document.getElementById(start).firstChild);
+              document.getElementById(position).innerHTML = "";
+            }
+
+            toggleRemove(start);
+            toggleRemove(middle);
+            toggleRemove(end);
           }
         }
     </script>
