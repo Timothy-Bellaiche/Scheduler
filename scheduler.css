@@ -174,12 +174,23 @@ thead {
 }
 
 /* line 188, ../sass/style.scss */
+.details_on {
+  display: block;
+  position: absolute;
+  border: 2px solid #F7F7F7;
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* line 198, ../sass/style.scss */
 .timetable {
   margin-left: -138px;
   /* égal à (taille élément/2 - taille_box/2) */
 }
 
-/* line 192, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .non_timetable {
   left: 50%;
   right: 0;
@@ -188,20 +199,20 @@ thead {
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 199, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 213, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -209,7 +220,7 @@ ul {
   text-align: center;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;
