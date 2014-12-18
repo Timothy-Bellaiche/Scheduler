@@ -198,9 +198,10 @@
     <script>
         function functionToggle(element,start,middle,end,coursename,classroom) {
           if(element.checked){
+          var details = coursename + " " + classroom + "autres détails";
           var descriptionBox = document.createElement('div');
           descriptionBox.className = "details timetable";
-          descriptionBox.innerHTML = coursename+classroom+"DETAILS";
+          descriptionBox.innerHTML = details;
           document.getElementById(start).className = "class course";
           document.getElementById(start).style.borderLeft = "2px solid white";
           document.getElementById(start).style.borderRight = "2px solid white";
