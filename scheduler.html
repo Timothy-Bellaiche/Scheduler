@@ -196,10 +196,10 @@
                 </ul>
             </div>
     <script>
-        function functionToggle(element,start,middle,end,coursename,classroom) {
+        function functionToggle(element,start,middle,end,coursename,classroom,prof) {
 
           if(element.checked){
-            var details = coursename + " " + classroom + "autres détails";
+            var details = coursename + " " + classroom + " " + prof;
             var descriptionBox = document.createElement('div');
             descriptionBox.className = "details timetable";
             descriptionBox.innerHTML = details;
@@ -250,11 +250,11 @@
 </body>
 
 <template name="coursedesc">
-<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}')" /></li>
+<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></li>
 </template>
 
 <template name="coursescheckeddesc">
-<li class="course_item course">{{courseName}}<div class="details non_timetable">{{courseName}}, Prof: {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:10). Classroom: {{classroom}}</div><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}')" /></li>
+<li class="course_item course">{{courseName}}<div class="details non_timetable">{{courseName}}, Prof: {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:10). Classroom: {{classroom}}</div><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></li>
 </template>
 
 <template name="searchBox">
