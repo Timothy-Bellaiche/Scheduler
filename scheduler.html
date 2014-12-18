@@ -210,7 +210,7 @@
 
           var descriptionBox = document.createElement('div');
           descriptionBox.className = "details timetable";
-          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
+          descriptionBox.innerHTML = details;
           document.getElementById(middle).className = "class course";
           document.getElementById(middle).innerHTML = coursename+"\n"+classroom;
           document.getElementById(middle).appendChild(descriptionBox);
@@ -219,7 +219,7 @@
 
           var descriptionBox = document.createElement('div');
           descriptionBox.className = "details timetable";
-          descriptionBox.innerHTML = coursename + classroom + "DETAILS";
+          descriptionBox.innerHTML = details;
           document.getElementById(end).className = "class course";
           document.getElementById(end).appendChild(descriptionBox);
           document.getElementById(end).style.borderLeft = "2px solid white";
