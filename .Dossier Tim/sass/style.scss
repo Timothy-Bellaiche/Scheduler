@@ -210,18 +210,8 @@ thead {
     background-color: #ffffff;
     color: #000000;
     text-align: left;
+    @include border-radius(4px 4px);
  }
-
- .details_on {
- 	display:block;
-    position:absolute;
-    border:2px solid $color3;
-    width: $box_width;
-    height: $box_height;
-    background-color: #ffffff;
-    color: #000000; 
- }
-
 
 .timetable {
 	margin-left: 150px / 2 - $box_width / 2;   /* égal à (taille élément/2 - taille_box/2) */
