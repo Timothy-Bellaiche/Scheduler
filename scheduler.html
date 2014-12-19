@@ -202,12 +202,6 @@
             var details = coursename + " " + classroom + " " + prof;
             var borderstyle = "2px solid white";
 
-            $(".course").mouseover(function() {
-              $(this).children(".details").show();
-              }).mouseout(function() {
-              $(this).children(".details").hide();
-              });
-
             function toggleAdd(position) {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
@@ -232,6 +226,12 @@
             toggleAdd(end);
             }
 
+            $(".course").mouseover(function() {
+              $(this).children(".details").show();
+              }).mouseout(function() {
+              $(this).children(".details").hide();
+              });
+
           else {
             function toggleRemove(position) {
               document.getElementById(position).className = "free";
@@ -252,6 +252,11 @@
             toggleRemove(middle);
             toggleRemove(end);
 
+            $(".course").mouseover(function() {
+              $(this).children(".details").show();
+              }).mouseout(function() {
+              $(this).children(".details").hide();
+              });
           }
         }
     </script>
