@@ -202,6 +202,12 @@
             var details = coursename + " " + classroom + " " + prof;
             var borderstyle = "2px solid white";
 
+            $(".course").mouseover(function() {
+              $(this).children(".details").show();
+              }).mouseout(function() {
+              $(this).children(".details").hide();
+              });
+
             function toggleAdd(position) {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
@@ -246,11 +252,6 @@
             toggleRemove(middle);
             toggleRemove(end);
 
-            $(".course").mouseover(function() {
-              $(this).children(".details").show();
-              }).mouseout(function() {
-              $(this).children(".details").hide();
-              });
           }
         }
     </script>
