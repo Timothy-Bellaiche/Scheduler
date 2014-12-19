@@ -15,6 +15,11 @@ if (Meteor.isClient) {
   });
 
   Template.body.events({
+    $(".course").mouseover(function() {
+      $(this).children(".details").show();
+      }).mouseout(function() {
+      $(this).children(".details").hide();
+      });
   });
 
   Template.coursedesc.events({
