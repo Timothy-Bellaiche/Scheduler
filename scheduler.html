@@ -221,13 +221,13 @@
               document.getElementById(position).appendChild(descriptionBox);
             }
 
-            function listAdd() {
+            function listAdd(coursename) {
              var descriptionBox = document.createElement('div');
-             descriptionBox.className = "details timetable";
+             descriptionBox.className = "details non_timetable";
              descriptionBox.innerHTML = details;
              var newCourse = document.createElement('li');
              newCourse.className = "course_item course";
-             newCourse.innerHTML = "courseName";
+             newCourse.innerHTML = courseName;
              newCourse.appendChild(descriptionBox);
              document.getElementById('course_list').insertBefore(newCourse, document.getElementById('course_list').firstChild);
             }
@@ -235,7 +235,7 @@
             toggleAdd(start);
             toggleAdd(middle);
             toggleAdd(end);
-            listAdd();
+            listAdd(coursename);
 
             $(".course").mouseover(function() {
               $(this).children(".details").show();
@@ -248,7 +248,7 @@
             function toggleRemove(position) {
               document.getElementById(position).className = "free";
               document.getElementById(position).removeChild(document.getElementById(position).firstChild);
-              document.getElementById(position).innerHTML = "";
+              document.getElementById(position).innerHTML = coursename;
               document.getElementById(position).style.borderLeft = "";
               document.getElementById(position).style.borderRight = "";
               if (position == start) {
@@ -259,6 +259,8 @@
               }
               else {}
             }
+
+            function listRemove(coursename) {}
 
             toggleRemove(start);
             toggleRemove(middle);
