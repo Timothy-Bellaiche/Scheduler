@@ -1,12 +1,13 @@
-
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import "compass";
 $color1: #FFB884; /*#FFB884; ORANGE*/
 $color2: #ABABAB; /*GRIS MOYEN*/
-$color3: #D4D4D4; /*GRIS CLAIR*/
+$color3: #E0E0E0; /*GRIS CLAIR*/
 $box_width: 400px;
 $box_height: 200px;
 
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -16,7 +17,7 @@ $box_height: 200px;
 
 
 body {
-	font-family: "raleway";
+	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	margin: auto;
 	padding: auto;
@@ -38,6 +39,31 @@ body {
 	/*background-color: grey;*/
 }
 
+/*Search Box*/
+input[type=text] {
+	color: $color2;
+	margin-top: 70px;
+	text-align: left;
+	border: 2px solid $color1;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	@include border-radius(4px 4px);
+	width: 200px;
+	height: 22px;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-style: 14px;
+}
+
+input[type=text]:focus {
+	outline: 0 none;
+	box-shadow: 0px 0px 1px 1px $color1;
+	/*border: 2px solid $color1;*/
+
+}
+
 .search_box {
 	color: $color2;
 	margin-top: 70px;
@@ -57,7 +83,7 @@ body {
 
 .schedule {
   table {
-    /*@include outer-table-borders(2px, $color2);*/
+    /*@include outer-table-borders(2px, $color2);
 
     /* @include alternating-rows-and-columns($color3, #ffffff, inherit);*/
 
@@ -182,7 +208,8 @@ thead {
     width: $box_width;
     height: $box_height;
     background-color: #ffffff;
-    color: #000000;  
+    color: #000000;
+    text-align: left;
  }
 
  .details_on {
@@ -195,15 +222,22 @@ thead {
     color: #000000; 
  }
 
+
 .timetable {
-	margin-left: 124px / 2 - $box_width / 2;   /* égal à (taille élément/2 - taille_box/2) */
+	margin-left: 150px / 2 - $box_width / 2;   /* égal à (taille élément/2 - taille_box/2) */
 }
 
 .non_timetable {
-	left: 50%;
-	right: 0;
-	margin-left: -$box_width / 2;  /*  margin-left égal à taille_box/2 */ 
+	margin-left: 160px;
+	margin-top: -100px;  /*  margin-left égal à taille_box/2 */ 
 }
+
+.title_box {
+	text-align: center;
+	display: block;
+}
+
+
 /* LISTE DE COURS SELECTIONNÉS */
 
 ul {
