@@ -260,11 +260,21 @@
               else {}
             }
 
-            function listRemove(coursename) {}
+            function listRemove() {
+              var listElement = document.querySelectorAll('#course_list li');
+                for(var i=0; currentListElement=listElement[i]; i++) {
+                  if currentListElement.innerHTML = coursename {
+                    currentListElement.parentNode.removeChild(li); 
+                  }
+                  else {}
+            } 
+
+            }
 
             toggleRemove(start);
             toggleRemove(middle);
             toggleRemove(end);
+            listRemove();
 
           }
         }
