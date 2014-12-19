@@ -224,12 +224,6 @@
             toggleAdd(start);
             toggleAdd(middle);
             toggleAdd(end);
-
-            $(".course").mouseover(function() {
-              $(this).children(".details").show();
-              }).mouseout(function() {
-              $(this).children(".details").hide();
-              });
             }
 
           else {
@@ -251,6 +245,12 @@
             toggleRemove(start);
             toggleRemove(middle);
             toggleRemove(end);
+
+            $(".course").mouseover(function() {
+              $(this).children(".details").show();
+              }).mouseout(function() {
+              $(this).children(".details").hide();
+              });
           }
         }
     </script>
