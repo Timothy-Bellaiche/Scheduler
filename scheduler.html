@@ -221,13 +221,13 @@
               document.getElementById(position).appendChild(descriptionBox);
             }
 
-            function listAdd(coursename) {
+            function listAdd() {
              var descriptionBox = document.createElement('div');
              descriptionBox.className = "details non_timetable";
              descriptionBox.innerHTML = details;
              var newCourse = document.createElement('li');
              newCourse.className = "course_item course";
-             newCourse.innerHTML = courseName;
+             newCourse.innerHTML = coursename;
              newCourse.appendChild(descriptionBox);
              document.getElementById('course_list').insertBefore(newCourse, document.getElementById('course_list').firstChild);
             }
