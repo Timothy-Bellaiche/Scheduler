@@ -221,10 +221,6 @@
               document.getElementById(position).appendChild(descriptionBox);
             }
 
-            toggleAdd(start);
-            toggleAdd(middle);
-            toggleAdd(end);
-
             function listAdd() {
              var descriptionBox = document.createElement('div');
              descriptionBox.className = "details timetable";
@@ -232,9 +228,13 @@
              var newCourse = document.createElement('li');
              newCourse.className = "course_item course";
              newCourse.innerHTML = courseName;
-             newCourse.insertBefore(newCourse, document.getElementById('course_list').firstChild)
+             newCourse.appendChild(descriptionBox);
+             newCourse.insertBefore(document.getElementById('course_list'), document.getElementById('course_list').firstChild);
             }
 
+            toggleAdd(start);
+            toggleAdd(middle);
+            toggleAdd(end);
             listAdd();
 
             $(".course").mouseover(function() {
