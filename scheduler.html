@@ -262,9 +262,9 @@
 
             function listRemove() {
               var listElement = document.querySelectorAll('#course_list li');
-                for(var i=0; currentListElement=listElement[i]; i++) {
+                for(var i=0; currentListElement=listElement[i], currentListElement.className!="total_credits"; i++) {
                   if (currentListElement.innerHTML = coursename) {
-                    currentListElement.parentNode.removeChild(currentListElement); 
+                    currentListElement.parentNode.removeChild(currentListElement);
                   }
                   else {}
                 }
@@ -272,7 +272,7 @@
             toggleRemove(start);
             toggleRemove(middle);
             toggleRemove(end);
-            // listRemove();
+            listRemove();
 
           }
         }
