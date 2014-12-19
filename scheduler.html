@@ -248,7 +248,7 @@
             function toggleRemove(position) {
               document.getElementById(position).className = "free";
               document.getElementById(position).removeChild(document.getElementById(position).firstChild);
-              document.getElementById(position).innerHTML = coursename;
+              document.getElementById(position).innerHTML = "";
               document.getElementById(position).style.borderLeft = "";
               document.getElementById(position).style.borderRight = "";
               if (position == start) {
