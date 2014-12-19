@@ -229,7 +229,7 @@
              newCourse.className = "course_item course";
              newCourse.innerHTML = "courseName";
              newCourse.appendChild(descriptionBox);
-             newCourse.insertBefore(document.getElementById('course_list'), document.getElementById('course_list').firstChild);
+             document.getElementById('course_list').insertBefore(newCourse, document.getElementById('course_list').firstChild);
             }
 
             toggleAdd(start);
