@@ -263,7 +263,6 @@
             function listRemove() {
               var listElement = document.getElementsByClassName("course_item");
                 for (var i=0; currentListElement=listElement[i]; i++) {
-                  alert(coursename + "   " + currentListElement.innerHTML + "   " + i + "   " + currentListElement.innerHTML.indexOf(coursename));
                   if (currentListElement.innerHTML.indexOf(coursename) > -1) {
                     currentListElement.parentNode.removeChild(currentListElement);
                     break ;}
