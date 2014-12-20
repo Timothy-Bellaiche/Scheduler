@@ -225,13 +225,6 @@
             toggleAdd(middle);
             toggleAdd(end);
 
-            $(".course").mouseover(function() {
-              $(this).children(".details").show();
-              }).mouseout(function() {
-              $(this).children(".details").hide();
-              });
-            }
-
           else {
             function toggleRemove(position) {
               document.getElementById(position).className = "free";
