@@ -4,6 +4,7 @@
 $color1: #FFB884; /*#FFB884; ORANGE*/
 $color2: #ABABAB; /*GRIS MOYEN*/
 $color3: #E0E0E0; /*GRIS CLAIR*/
+$color4: #303030; /*GRIS FONCÉ*/
 $box_width: 400px;
 $box_height: 200px;
 
@@ -208,9 +209,10 @@ thead {
     width: $box_width;
     height: $box_height;
     background-color: #ffffff;
-    color: #000000;
+    color: $color4;
     text-align: left;
     @include border-radius(10px 10px);
+    font-size: 15px;
  }
 
 .timetable {

@@ -303,6 +303,10 @@
 <li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></li>
 </template>
 
+<template name="coursescheckeddesc">
+<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></li>
+</template>
+
 <template name="checkboxCourse">
 <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/>
 </template>
