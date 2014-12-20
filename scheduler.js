@@ -27,10 +27,10 @@ if (Meteor.isClient) {
     "click .toggle-checked": function () {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
     },
-    "mouseover .details": function () {
+    "mouseover .course": function () {
       $("details").show();
     },
-    "mouseout .details": function () {
+    "mouseout .course": function () {
       $("details").hide();
     }
   })
