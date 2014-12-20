@@ -225,34 +225,40 @@ thead {
 .title_box {
 	text-align: center;
 	display: block;
+	width: 400px;
 }
 
 .day_box {
 	display: inline-block;
 	padding-left: 15px;
+	width: 200px;
 }
 
 .hour_box {
 	display: inline-block;
-
+	width: 200px;
 }
 
 .prof_box {
 	display: inline-block;
 	padding-left: 15px;
+	width: 200px;
 }
 
 .credits_box {
 	display: inline-block;
+	width: 200px;
 }
 
 .room_box {
 	display: inline-block;
 	padding-left: 15px;
+	width: 200px;
 }
 
 .international_box {
 	display: inline-block;
+	width: 200px;
 }
 
 .details_box {
@@ -293,18 +299,4 @@ ul {
 	color: #ffffff;
 	text-align: center;
 }
-
-/*
-tr.even {
-	td.free {
-		background-color: $color3
-	}
-}
-
-tr.odd {
-	td.free {
-		background-color: #ffffff;
-	}
-}
-*/
 

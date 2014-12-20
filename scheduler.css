@@ -224,42 +224,49 @@ thead {
 .title_box {
   text-align: center;
   display: block;
+  width: 400px;
 }
 
-/* line 230, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .day_box {
   display: inline-block;
   padding-left: 15px;
+  width: 200px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .hour_box {
   display: inline-block;
+  width: 200px;
 }
 
-/* line 240, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .prof_box {
   display: inline-block;
   padding-left: 15px;
+  width: 200px;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .credits_box {
   display: inline-block;
+  width: 200px;
 }
 
-/* line 249, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .room_box {
   display: inline-block;
   padding-left: 15px;
+  width: 200px;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .international_box {
   display: inline-block;
+  width: 200px;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .details_box {
   display: block;
   width: 400px;
@@ -268,20 +275,20 @@ thead {
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 268, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 273, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -289,22 +296,8 @@ ul {
   text-align: center;
 }
 
-/* line 292, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;
 }
-
-/*
-tr.even {
-	td.free {
-		background-color: $color3
-	}
-}
-
-tr.odd {
-	td.free {
-		background-color: #ffffff;
-	}
-}
-*/
