@@ -20,9 +20,9 @@
         <thead>
           <tr class="odd">
             <td><br><br></td>
-            <td class="day">MONDAY <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></td>
-            <td class="day">TUESDAY {{checkboxCourse}}></td>
-            <td class="day">WEDNESDAY {{> checkboxCourse}}</td>
+            <td class="day">MONDAY</td>
+            <td class="day">TUESDAY</td>
+            <td class="day">WEDNESDAY</td>
             <td class="day">THURSDAY</td>
             <td class="day">FRIDAY</td>
             <td class="day">SATURDAY</td>
@@ -225,7 +225,7 @@
               boxContent(descriptionBox,"room_box","Room : "+classroom);
               boxContent(descriptionBox,"international_box","TO DO");
               boxContent(descriptionBox,"details_box","Description : "+"TO DO");
-              boxContent(descriptionBox,"add_box","{{checkboxCourse}}");
+              boxContent(descriptionBox,"add_box","ALLEZ {{> checkboxCourse}}");
 
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;

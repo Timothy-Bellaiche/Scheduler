@@ -208,8 +208,8 @@ thead {
     border:2px solid $color3;
     width: $box_width;
     height: $box_height;
-    background-color: #ffffff;
-    color: $color4;
+    background-color: $color4;
+    color: #ffffff;
     text-align: left;
     @include border-radius(10px 10px);
     font-size: 15px;
@@ -229,6 +229,7 @@ thead {
 	display: block;
 	width: 400px;
 	margin-bottom: 20px;
+	margin-top: 15px;
 }
 
 .day_box {
