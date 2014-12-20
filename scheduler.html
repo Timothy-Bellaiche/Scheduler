@@ -196,16 +196,29 @@
                 </ul>
             </div>
     <script>
-        function functionToggle(element,start,middle,end,coursename,classroom,prof) {
+        function functionToggle(element,start,middle,end,coursename,classroom,prof,day) {
 
           if (element.checked) {
-            var details = coursename + " " + classroom + " " + prof;
-            var borderstyle = "2px solid white";
-
+            // var details = "<div class="title_box">" + coursename + "</div>
+            //         <div class="day_box">" + day + "</div>
+            //         <div class="hour_box">" + start + " - " + "</div>
+            //         <div class="prof_box">Professor : " + prof + "</div>
+            //         <div class="credits_box">Credits : " + credits + "</div>
+            //         <div class="room_box">Room : " + classroom + "</div>
+            //         <div class="international_box">Category : " + category + "</div>
+            //         <div class="details_box">Description : " + "description + "</div>""
+            var borderstyle = "2px solid white";            
             function toggleAdd(position) {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
-              descriptionBox.innerHTML = details;
+              function boxContent(truc,thing,inner) {
+                var boxInfo = document.createElement('div');
+                boxInfo.className = thing;
+                boxInfo.innerHTML = inner;
+                truc.appendChild(boxInfo);
+              }
+              boxContent(descriptionBox,title_box,coursename);
+              boxContent(descriptionBox,day_box,day);
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
               document.getElementById(position).style.borderRight = borderstyle;
@@ -224,7 +237,7 @@
             function listAdd() {
              var descriptionBox = document.createElement('div');
              descriptionBox.className = "details non_timetable";
-             descriptionBox.innerHTML = details;
+             descriptionBox.innerHTML = "details";
              var newCourse = document.createElement('li');
              newCourse.className = "course_item course";
              newCourse.innerHTML = coursename;
@@ -283,7 +296,7 @@
 </template>
 
 <template name="coursescheckeddesc">
-<li class="course_item course">{{courseName}}<div class="details non_timetable">{{courseName}}, Prof: {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:10). Classroom: {{classroom}}</div><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></li>
+<li class="course_item course">{{courseName}}<div class="details non_timetable">{{courseName}}, Prof: {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:10). Classroom: {{classroom}}</div><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')" /></li>
 </template>
 
 <template name="searchBox">
