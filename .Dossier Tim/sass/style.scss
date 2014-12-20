@@ -227,6 +227,41 @@ thead {
 	display: block;
 }
 
+.day_box {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.hour_box {
+	display: inline-block;
+
+}
+
+.prof_box {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.credits_box {
+	display: inline-block;
+}
+
+.room_box {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.international_box {
+	display: inline-block;
+}
+
+.details_box {
+	display: block;
+	width: 400px;
+	padding:{
+		left: 15px;
+		right: 15px;}
+}
 
 /* LISTE DE COURS SELECTIONNÉS */
 
@@ -253,6 +288,7 @@ ul {
 	color: #ffffff;
 	text-align: center;
 }
+
 .total_hours {
 	color: #ffffff;
 	text-align: center;
