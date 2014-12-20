@@ -219,6 +219,13 @@
               }
               boxContent(descriptionBox,"title_box",coursename);
               boxContent(descriptionBox,"day_box",day);
+              boxContent(descriptionBox,"hour_box",coursename+coursename);
+              boxContent(descriptionBox,"prof_box",day);
+              boxContent(descriptionBox,"credits_box",day);
+              boxContent(descriptionBox,"room_box",day);
+              boxContent(descriptionBox,"international_box",day);
+              boxContent(descriptionBox,"details_box",day);
+
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
               document.getElementById(position).style.borderRight = borderstyle;
@@ -292,7 +299,7 @@
 </body>
 
 <template name="coursedesc">
-<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></li>
+<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')" /></li>
 </template>
 
 <template name="coursescheckeddesc">
