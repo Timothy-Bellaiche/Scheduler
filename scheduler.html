@@ -225,7 +225,7 @@
               boxContent(descriptionBox,"room_box","Room : "+classroom);
               boxContent(descriptionBox,"international_box","TO DO");
               boxContent(descriptionBox,"details_box","Description : "+"TO DO");
-              boxContent(descriptionBox,"add_box","{{> addRemoveCourse}}");
+              boxContent(descriptionBox,"add_box","{{> checkboxCourse}}");
 
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
@@ -303,7 +303,7 @@
 <li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></li>
 </template>
 
-<template name="addRemoveCourse">
+<template name="checkboxCourse">
 <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/>
 </template>
 
