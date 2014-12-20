@@ -26,6 +26,12 @@ if (Meteor.isClient) {
   Template.coursescheckeddesc.events({
     "click .toggle-checked": function () {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
+    },
+    "mouseover .details": function () {
+      $("details").show();
+    },
+    "mouseout .details": function () {
+      $("details").hide();
     }
   })
 }
