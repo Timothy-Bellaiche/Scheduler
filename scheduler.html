@@ -225,7 +225,7 @@
               boxContent(descriptionBox,"room_box","Room : "+classroom);
               boxContent(descriptionBox,"international_box","TO DO");
               boxContent(descriptionBox,"details_box","Description : "+"TO DO");
-              boxContent(descriptionBox,"add_box","<input type=\'checkbox\' checked=\'{{checked}}\' class=\'toggle-checked\' onclick=\'functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')\' />");
+              boxContent(descriptionBox,"add_box",'<input type=\'checkbox\' checked=\'{{checked}}\' class=\'toggle-checked\' onclick=\'functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')\' />');
 
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
