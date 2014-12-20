@@ -225,48 +225,58 @@ thead {
   text-align: center;
   display: block;
   width: 400px;
+  margin-bottom: 20px;
 }
 
-/* line 231, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .day_box {
   display: inline-block;
   padding-left: 15px;
   width: 185px;
+  margin-bottom: 10px;
 }
 
-/* line 237, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .hour_box {
   display: inline-block;
   width: 185px;
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
 
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .prof_box {
   display: inline-block;
   padding-left: 15px;
   width: 185px;
+  margin-bottom: 10px;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .credits_box {
   display: inline-block;
   width: 185px;
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .room_box {
   display: inline-block;
   padding-left: 15px;
   width: 185px;
+  margin-bottom: 10px;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .international_box {
   display: inline-block;
   width: 185;
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
 
-/* line 264, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .details_box {
   display: block;
   width: 370px;
@@ -274,21 +284,29 @@ thead {
   padding-right: 15px;
 }
 
+/* line 283, ../sass/style.scss */
+.add_box {
+  width: 75px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 274, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 279, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -296,7 +314,7 @@ ul {
   text-align: center;
 }
 
-/* line 298, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;

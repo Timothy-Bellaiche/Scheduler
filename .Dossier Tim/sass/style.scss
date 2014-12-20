@@ -226,39 +226,50 @@ thead {
 	text-align: center;
 	display: block;
 	width: 400px;
+	margin-bottom: 20px;
 }
 
 .day_box {
 	display: inline-block;
 	padding-left: 15px;
 	width: 185px;
+	margin-bottom: 10px;
 }
 
 .hour_box {
 	display: inline-block;
 	width: 185px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+
 }
 
 .prof_box {
 	display: inline-block;
 	padding-left: 15px;
 	width: 185px;
+	margin-bottom: 10px;
 }
 
 .credits_box {
 	display: inline-block;
 	width: 185px;
+	margin-bottom: 10px;
+	padding-left: 15px;
 }
 
 .room_box {
 	display: inline-block;
 	padding-left: 15px;
 	width: 185px;
+	margin-bottom: 10px;
 }
 
 .international_box {
 	display: inline-block;
 	width: 185;
+	margin-bottom: 10px;
+	padding-left: 15px;
 }
 
 .details_box {
@@ -267,6 +278,13 @@ thead {
 	padding:{
 		left: 15px;
 		right: 15px;}
+}
+
+.add_box {
+	width: 75px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	display: block;
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
