@@ -213,11 +213,11 @@
               descriptionBox.className = "details timetable";
               function boxContent(truc,thing,inner) {
                 var boxInfo = document.createElement('div');
-                boxInfo.className = "thing";
+                boxInfo.className = thing;
                 boxInfo.innerHTML = inner;
                 truc.appendChild(boxInfo);
               }
-              boxContent(descriptionBox,title_box,coursename);
+              boxContent(descriptionBox,"title_box",coursename);
               boxContent(descriptionBox,day_box,day);
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
