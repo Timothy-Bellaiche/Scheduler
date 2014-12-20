@@ -205,7 +205,7 @@
             function toggleAdd(position) {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
-              descriptionBox.innerHTML = {{detailBox}};
+              descriptionBox.innerHTML = details;
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
               document.getElementById(position).style.borderRight = borderstyle;
@@ -224,7 +224,7 @@
             function listAdd() {
              var descriptionBox = document.createElement('div');
              descriptionBox.className = "details non_timetable";
-             descriptionBox.innerHTML = {{detailBox}};
+             descriptionBox.innerHTML = details;
              var newCourse = document.createElement('li');
              newCourse.className = "course_item course";
              newCourse.innerHTML = coursename;
@@ -303,4 +303,3 @@
 
 <template name="detailBox">
     <div class="title_box">{{courseName}}</div>
-</template>
