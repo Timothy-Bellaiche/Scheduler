@@ -302,6 +302,10 @@ ul {
   list-style: none;
 }
 
+ul li:hover .details {
+  display: block;
+}
+
 /* line 300, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
