@@ -217,7 +217,7 @@ thead {
 
 /* line 222, ../sass/style.scss */
 .non_timetable {
-  margin-left: 160px;
+  margin-right: 160px;
   margin-top: -100px;
   /*  margin-left égal à taille_box/2 */
 }
