@@ -28,10 +28,10 @@ if (Meteor.isClient) {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
     },
     "mouseover .course": function () {
-      $(this+".details").show();
+      $(".details").show();
     },
     "mouseout .course": function () {
-      $(this".details").hide();
+      $(".details").hide();
     }
   })
 }
