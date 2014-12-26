@@ -53,8 +53,7 @@ input[type=text] {
   width: 200px;
   height: 22px;
   display: inline-block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   font-size: 16px;
 }
 
