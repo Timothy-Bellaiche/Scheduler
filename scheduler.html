@@ -8,7 +8,6 @@
     <div class="banner">Scheduler</div>
     <div class="container">
       <!--<div class="search_box">{{>searchBox}}</div><div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>-->
-      <div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>
       {{>searchBox}}
         <!--<ul>-->
           <!--{{#each courses}}-->
@@ -319,6 +318,7 @@
 
 <template name="searchBox">
     {{> esInput index="courses" placeholder="Search by course name" }}
+    <div class="entypo-search search_icon"></div>
 
     <br>
     (example: IT for Networked Organizations, Management Information Systems...)

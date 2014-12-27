@@ -49,13 +49,22 @@ input[type=text] {
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
-	@include border-radius(4px 4px);
+	@include border-left-radius(4px);
 	width: 200px;
 	height: 22px;
 	display: inline-block;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 16px;
+}
+
+.search_icon {
+	@include border-right-radius(4px);
+	height: 22px;
+	margin-left: 0px;
+	display: inline-block;
+	color: white;
+	background-color: $color1;
 }
 
 input[type=text]:focus {
