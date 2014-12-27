@@ -50,7 +50,7 @@ input[type=text] {
 	margin-right: auto;
 	margin-left: auto;
 	@include border-left-radius(4px);
-	width: 550px;
+	width: 500px;
 	height: 22px;
 	display: inline-block;
 	padding-top: 5px;
@@ -100,12 +100,14 @@ input[type=text]:focus {
 	width: 540px;
 	margin-left: auto;
 	margin-right: auto;
+	max-height: 300px;
+	overflow-y: scroll;
 }
 
 .course_search_result {
 	width: 500px;
 	display: inline-block;
-	overflow: scroll;
+	text-align: left;
 }
 
 .checkbox {
@@ -115,6 +117,7 @@ input[type=text]:focus {
 
 .course-list {
 	margin-top: 8px;
+	border-bottom: solid $color3 1px;
 }
 
 .schedule {
