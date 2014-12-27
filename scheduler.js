@@ -18,16 +18,16 @@ if (Meteor.isClient) {
     totalhours: function() {
       var sumh=0;
       var cursor=Courses.find({checked: true});
-      cursor.forEach(function(hours){
-        sumh = sumh + trueEndTime - startTime
+      cursor.forEach(function(summing){
+        sumh = sumh + summing.trueEndTime - summing.startTime
       });
       return sumh;
     },
     totalcredits: function() {
       var sumc=0;
       var cursor=Courses.find({checked: true});
-      cursor.forEach(function(credits){
-        sumc = sumc + credits
+      cursor.forEach(function(summing){
+        sumc = sumc + summing.credits
       });
       return sumc;
     }
