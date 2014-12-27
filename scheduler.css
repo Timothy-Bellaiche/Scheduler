@@ -59,9 +59,10 @@ input[type=text] {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 16px;
+  padding-left: 3px;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .search_icon {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -79,19 +80,14 @@ input[type=text] {
   margin-left: -5px;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 input[type=text]:focus {
   outline: 0 none;
-  box-shadow: 0px 0px 1px 1px #FFB884;
+  box-shadow: 0px 0px 1px 1px #FFB884 inset;
   /*border: 2px solid $color1;*/
 }
-/* line 77, ../sass/style.scss */
-input[type=text]:focus .search_icon {
-  outline: 0 none;
-  box-shadow: 0px 0px 1px 1px #FFB884;
-}
 
-/* line 85, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .search_box {
   color: #ABABAB;
   margin-top: 70px;
@@ -111,7 +107,7 @@ input[type=text]:focus .search_icon {
   padding-bottom: 5px;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .schedule table {
     /*@include outer-table-borders(2px, $color2);
 
@@ -120,25 +116,25 @@ input[type=text]:focus .search_icon {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 110, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .schedule table tr.odd td.free, .schedule table tr:nth-child(2n+1) td.free {
   background: none;
 }
-/* line 112, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .schedule table tr.odd td.free.even, .schedule table tr.odd td.free:nth-child(2n), .schedule table tr:nth-child(2n+1) td.free.even, .schedule table tr:nth-child(2n+1) td.free:nth-child(2n) {
   background: none;
 }
-/* line 119, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .schedule table tr.even td.free {
   background-color: #E0E0E0;
 }
-/* line 121, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .schedule table tr.even td.free.even, .schedule table tr.even td.free:nth-child(2n) {
   background-color: #E0E0E0;
 }
 
 /* TABLE */
-/* line 135, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .edt {
   width: 1200px;
   table-layout: fixed;
@@ -148,21 +144,21 @@ input[type=text]:focus .search_icon {
   border: 2px solid #ABABAB;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .hour {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .day {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .class {
   text-align: center;
   background-color: #FFB884;
@@ -172,13 +168,13 @@ input[type=text]:focus .search_icon {
   padding-bottom: 8px;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 thead {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 173, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .selected_course_list {
   width: 100%;
   height: 100%;
@@ -190,7 +186,7 @@ thead {
   background-color: #FFB884;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .course_list_title {
   text-align: center;
   width: 200px;
@@ -209,7 +205,7 @@ thead {
   padding-left: 5px;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .course_list {
   text-align: left;
   max-width: 260px;
@@ -219,7 +215,7 @@ thead {
 }
 
 /* POP UP DESCRIPTION */
-/* line 222, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .details {
   display: none;
   position: absolute;
@@ -235,20 +231,20 @@ thead {
   font-size: 15px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .timetable {
   margin-left: -125px;
   /* égal à (taille élément/2 - taille_box/2) */
 }
 
-/* line 239, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .non_timetable {
   margin-left: 160px;
   margin-top: -100px;
   /*  margin-left égal à taille_box/2 */
 }
 
-/* line 244, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .title_box {
   text-align: center;
   display: block;
@@ -257,7 +253,7 @@ thead {
   margin-top: 15px;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .day_box {
   display: inline-block;
   padding-left: 15px;
@@ -265,7 +261,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .hour_box {
   display: inline-block;
   width: 185px;
@@ -273,7 +269,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .prof_box {
   display: inline-block;
   padding-left: 15px;
@@ -281,7 +277,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 274, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .credits_box {
   display: inline-block;
   width: 185px;
@@ -289,7 +285,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 281, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .room_box {
   display: inline-block;
   padding-left: 15px;
@@ -297,7 +293,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .international_box {
   display: inline-block;
   width: 185;
@@ -305,7 +301,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .details_box {
   display: block;
   width: 370px;
@@ -313,7 +309,7 @@ thead {
   padding-right: 15px;
 }
 
-/* line 303, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .add_box {
   width: 75px;
   margin-right: 0px;
@@ -322,20 +318,20 @@ thead {
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 312, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 326, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -343,7 +339,7 @@ ul {
   text-align: center;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;
