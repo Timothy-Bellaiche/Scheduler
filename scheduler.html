@@ -190,8 +190,7 @@
                       {{>coursescheckeddesc}}
                     {{/each}}
                     <!--<li class="course_item course">IT for networked organizations<div class="details non_timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></li>-->
-                    <li class="total_credits">TOTAL CREDITS: to-do</li>
-                    <li class="total_hours">TOTAL HOURS/WEEK: to-do</li>
+                    {{>totals}}
                     <!--<li class="total_credits">BACK-END BY DAMIEN, FRONT-END BY TIMOTHY, BUSINESS/MARKETING BY MARKUS</li>-->
                 </ul>
             </div>
@@ -271,4 +270,9 @@
     {{#ifEsHasNoResults index="courses"}}
         <div class="no-results">No results found!</div>
     {{/ifEsHasNoResults}}
+</template>
+
+<template name="totals">
+<li class="total_credits">TOTAL CREDITS: {{totalcredits}}</li>
+<li class="total_hours">TOTAL HOURS/WEEK: {{totalhours}}</li>
 </template>

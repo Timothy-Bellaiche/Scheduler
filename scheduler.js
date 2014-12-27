@@ -11,6 +11,22 @@ if (Meteor.isClient) {
     },
     courseschecked: function () {
       return Courses.find({checked: true});
+    },
+    totalhours: function() {
+      var sumh=0;
+      var cursor=Courses.find({checked: true});
+      cursor.forEach(function(hours){
+        sumh = sumh + trueEndTime - startTime
+      });
+      return sumh;
+    },
+    totalcredits: function() {
+      var sumc=0;
+      var cursor=Courses.find({checked: true});
+      cursor.forEach(function(credits){
+        sumc = sumc + credits
+      });
+      return sumc;
     }
   });
 
