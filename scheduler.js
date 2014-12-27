@@ -11,7 +11,10 @@ if (Meteor.isClient) {
     },
     courseschecked: function () {
       return Courses.find({checked: true});
-    },
+    }
+  });
+
+  Template.totals.helpers({
     totalhours: function() {
       var sumh=0;
       var cursor=Courses.find({checked: true});
