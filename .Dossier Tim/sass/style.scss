@@ -98,15 +98,22 @@ input[type=text]:focus {
 
 .search_results {
 	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .course_search_result {
 	width: 460px;
+	display: inline-block;
+	overflow: scroll;
 }
 
 .checkbox {
 	width: 20px;
-	height: 20px;
+	height: 18px;
+	padding-left: 20px;
+	display: inline-block;
+
 }
 
 
