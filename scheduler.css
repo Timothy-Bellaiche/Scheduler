@@ -108,12 +108,12 @@ input[type=text]:focus {
 }
 
 /* line 99, ../sass/style.scss */
-ul .search_results {
+.search_results {
   width: 500px;
 }
 
 /* line 103, ../sass/style.scss */
-li .course_search_result {
+.course_search_result {
   width: 460px;
 }
 
