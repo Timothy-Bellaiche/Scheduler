@@ -6,12 +6,12 @@
 /*GRIS CLAIR*/
 /*GRIS FONCÉ*/
 /* entypo */
-/* line 14, ../sass/style.scss */
+/* line 14, ../sass/scheduler.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 20, ../sass/scheduler.scss */
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -19,7 +19,7 @@ body {
   padding: auto;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 27, ../sass/scheduler.scss */
 .banner {
   font-size: 50px;
   background-color: red;
@@ -30,7 +30,7 @@ body {
   padding: 20px 0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 37, ../sass/scheduler.scss */
 .container {
   text-align: center;
   margin-top: 50px;
@@ -38,7 +38,7 @@ body {
 }
 
 /*Search Box*/
-/* line 44, ../sass/style.scss */
+/* line 44, ../sass/scheduler.scss */
 input[type=text] {
   color: #ABABAB;
   margin-top: 70px;
@@ -62,7 +62,7 @@ input[type=text] {
   padding-left: 3px;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 62, ../sass/scheduler.scss */
 .search_icon {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -80,14 +80,14 @@ input[type=text] {
   margin-left: -5px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 75, ../sass/scheduler.scss */
 input[type=text]:focus {
   outline: 0 none;
   box-shadow: 0px 0px 1px 1px #FFB884 inset;
   /*border: 2px solid $color1;*/
 }
 
-/* line 82, ../sass/style.scss */
+/* line 82, ../sass/scheduler.scss */
 .search_box {
   color: #ABABAB;
   margin-top: 70px;
@@ -107,31 +107,31 @@ input[type=text]:focus {
   padding-bottom: 5px;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 99, ../sass/scheduler.scss */
 .search_results {
   width: 540px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 105, ../sass/scheduler.scss */
 .course_search_result {
   width: 500px;
   display: inline-block;
   overflow: scroll;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 111, ../sass/scheduler.scss */
 .checkbox {
   display: inline-block;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 116, ../sass/scheduler.scss */
 .course-list {
   margin-top: 8px;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 121, ../sass/scheduler.scss */
 .schedule table {
     /*@include outer-table-borders(2px, $color2);
 
@@ -140,25 +140,25 @@ input[type=text]:focus {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 128, ../sass/style.scss */
+/* line 128, ../sass/scheduler.scss */
 .schedule table tr.odd td.free, .schedule table tr:nth-child(2n+1) td.free {
   background: none;
 }
-/* line 130, ../sass/style.scss */
+/* line 130, ../sass/scheduler.scss */
 .schedule table tr.odd td.free.even, .schedule table tr.odd td.free:nth-child(2n), .schedule table tr:nth-child(2n+1) td.free.even, .schedule table tr:nth-child(2n+1) td.free:nth-child(2n) {
   background: none;
 }
-/* line 137, ../sass/style.scss */
+/* line 137, ../sass/scheduler.scss */
 .schedule table tr.even td.free {
   background-color: #E0E0E0;
 }
-/* line 139, ../sass/style.scss */
+/* line 139, ../sass/scheduler.scss */
 .schedule table tr.even td.free.even, .schedule table tr.even td.free:nth-child(2n) {
   background-color: #E0E0E0;
 }
 
 /* TABLE */
-/* line 153, ../sass/style.scss */
+/* line 153, ../sass/scheduler.scss */
 .edt {
   width: 1200px;
   table-layout: fixed;
@@ -168,21 +168,21 @@ input[type=text]:focus {
   border: 2px solid #ABABAB;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 160, ../sass/scheduler.scss */
 .hour {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 168, ../sass/scheduler.scss */
 .day {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 175, ../sass/scheduler.scss */
 .class {
   text-align: center;
   background-color: #FFB884;
@@ -192,13 +192,13 @@ input[type=text]:focus {
   padding-bottom: 8px;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 186, ../sass/scheduler.scss */
 thead {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 191, ../sass/scheduler.scss */
 .selected_course_list {
   width: 100%;
   height: 100%;
@@ -210,7 +210,7 @@ thead {
   background-color: #FFB884;
 }
 
-/* line 206, ../sass/style.scss */
+/* line 206, ../sass/scheduler.scss */
 .course_list_title {
   text-align: center;
   width: 200px;
@@ -229,7 +229,7 @@ thead {
   padding-left: 5px;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 228, ../sass/scheduler.scss */
 .course_list {
   text-align: left;
   max-width: 260px;
@@ -239,7 +239,7 @@ thead {
 }
 
 /* POP UP DESCRIPTION */
-/* line 240, ../sass/style.scss */
+/* line 240, ../sass/scheduler.scss */
 .details {
   display: none;
   position: absolute;
@@ -255,20 +255,20 @@ thead {
   font-size: 15px;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 253, ../sass/scheduler.scss */
 .timetable {
   margin-left: -125px;
   /* égal à (taille élément/2 - taille_box/2) */
 }
 
-/* line 257, ../sass/style.scss */
+/* line 257, ../sass/scheduler.scss */
 .non_timetable {
   margin-left: 160px;
   margin-top: -100px;
   /*  margin-left égal à taille_box/2 */
 }
 
-/* line 262, ../sass/style.scss */
+/* line 262, ../sass/scheduler.scss */
 .title_box {
   text-align: center;
   display: block;
@@ -277,7 +277,7 @@ thead {
   margin-top: 15px;
 }
 
-/* line 270, ../sass/style.scss */
+/* line 270, ../sass/scheduler.scss */
 .day_box {
   display: inline-block;
   padding-left: 15px;
@@ -285,7 +285,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 277, ../sass/style.scss */
+/* line 277, ../sass/scheduler.scss */
 .hour_box {
   display: inline-block;
   width: 185px;
@@ -293,7 +293,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 285, ../sass/style.scss */
+/* line 285, ../sass/scheduler.scss */
 .prof_box {
   display: inline-block;
   padding-left: 15px;
@@ -301,7 +301,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 292, ../sass/style.scss */
+/* line 292, ../sass/scheduler.scss */
 .credits_box {
   display: inline-block;
   width: 185px;
@@ -309,7 +309,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 299, ../sass/style.scss */
+/* line 299, ../sass/scheduler.scss */
 .room_box {
   display: inline-block;
   padding-left: 15px;
@@ -317,7 +317,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 306, ../sass/style.scss */
+/* line 306, ../sass/scheduler.scss */
 .international_box {
   display: inline-block;
   width: 185;
@@ -325,7 +325,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 313, ../sass/scheduler.scss */
 .details_box {
   display: block;
   width: 370px;
@@ -333,7 +333,7 @@ thead {
   padding-right: 15px;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 321, ../sass/scheduler.scss */
 .add_box {
   width: 75px;
   margin-right: 0px;
@@ -342,20 +342,20 @@ thead {
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 330, ../sass/style.scss */
+/* line 330, ../sass/scheduler.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 335, ../sass/scheduler.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 344, ../sass/style.scss */
+/* line 344, ../sass/scheduler.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -363,7 +363,7 @@ ul {
   text-align: center;
 }
 
-/* line 354, ../sass/style.scss */
+/* line 354, ../sass/scheduler.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;
