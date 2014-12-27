@@ -305,11 +305,12 @@
 </body>
 
 <template name="coursedesc">
-<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></li>
+<li class="course_search_result">{{courseName}}, <span style="font-style: italic;">{{prof}}</span> {{day}} : {{startTime}}:10-{{trueEndTime}}:00</li><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/>
 </template>
 
 <template name="coursescheckeddesc">
-<li>{{courseName}}, {{prof}} (every {{day}}, starts at {{startTime}}:10, ends at {{trueEndTime}}:00) <input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></li>
+<li class="course_search_result">{{courseName}}, <span style="font-style: italic;">{{prof}}</span> {{day}} : {{startTime}}:10-{{trueEndTime}}:00</li> 
+  <div class="checkbox"><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></div>
 </template>
 
 <template name="checkboxCourse">
@@ -319,13 +320,11 @@
 <template name="searchBox">
     {{> esInput index="courses" placeholder="Search by course name" }}
     <div class="search_icon"><div style="color: white;" class="entypo-search"></div></div>
-
-    <br>
-    (example: IT for Networked Organizations, Management Information Systems...)
-
+    <ul class="search_results">
     {{#esEach index="courses"}}
         {{> coursedesc}}
     {{/esEach}}
+    </ul>
 
     {{#ifEsHasNoResults index="courses"}}
         <div class="no-results">No results found!</div>
