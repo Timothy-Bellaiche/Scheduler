@@ -69,22 +69,29 @@ input[type=text] {
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  height: 36px;
+  height: 22px;
   width: 36px;
-  margin-left: 0px;
   display: inline-block;
   color: white;
   background-color: #FFB884;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: -5px;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 input[type=text]:focus {
   outline: 0 none;
   box-shadow: 0px 0px 1px 1px #FFB884;
   /*border: 2px solid $color1;*/
 }
+/* line 77, ../sass/style.scss */
+input[type=text]:focus .search_icon {
+  outline: 0 none;
+  box-shadow: 0px 0px 1px 1px #FFB884;
+}
 
-/* line 79, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .search_box {
   color: #ABABAB;
   margin-top: 70px;
@@ -104,7 +111,7 @@ input[type=text]:focus {
   padding-bottom: 5px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .schedule table {
     /*@include outer-table-borders(2px, $color2);
 
@@ -113,25 +120,25 @@ input[type=text]:focus {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 104, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .schedule table tr.odd td.free, .schedule table tr:nth-child(2n+1) td.free {
   background: none;
 }
-/* line 106, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .schedule table tr.odd td.free.even, .schedule table tr.odd td.free:nth-child(2n), .schedule table tr:nth-child(2n+1) td.free.even, .schedule table tr:nth-child(2n+1) td.free:nth-child(2n) {
   background: none;
 }
-/* line 113, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .schedule table tr.even td.free {
   background-color: #E0E0E0;
 }
-/* line 115, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .schedule table tr.even td.free.even, .schedule table tr.even td.free:nth-child(2n) {
   background-color: #E0E0E0;
 }
 
 /* TABLE */
-/* line 129, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .edt {
   width: 1200px;
   table-layout: fixed;
@@ -141,21 +148,21 @@ input[type=text]:focus {
   border: 2px solid #ABABAB;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .hour {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .day {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .class {
   text-align: center;
   background-color: #FFB884;
@@ -165,13 +172,13 @@ input[type=text]:focus {
   padding-bottom: 8px;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 thead {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .selected_course_list {
   width: 100%;
   height: 100%;
@@ -183,7 +190,7 @@ thead {
   background-color: #FFB884;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .course_list_title {
   text-align: center;
   width: 200px;
@@ -202,7 +209,7 @@ thead {
   padding-left: 5px;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .course_list {
   text-align: left;
   max-width: 260px;
@@ -212,7 +219,7 @@ thead {
 }
 
 /* POP UP DESCRIPTION */
-/* line 216, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .details {
   display: none;
   position: absolute;
@@ -228,20 +235,20 @@ thead {
   font-size: 15px;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .timetable {
   margin-left: -125px;
   /* égal à (taille élément/2 - taille_box/2) */
 }
 
-/* line 233, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .non_timetable {
   margin-left: 160px;
   margin-top: -100px;
   /*  margin-left égal à taille_box/2 */
 }
 
-/* line 238, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .title_box {
   text-align: center;
   display: block;
@@ -250,7 +257,7 @@ thead {
   margin-top: 15px;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .day_box {
   display: inline-block;
   padding-left: 15px;
@@ -258,7 +265,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .hour_box {
   display: inline-block;
   width: 185px;
@@ -266,7 +273,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 261, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .prof_box {
   display: inline-block;
   padding-left: 15px;
@@ -274,7 +281,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 268, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .credits_box {
   display: inline-block;
   width: 185px;
@@ -282,7 +289,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .room_box {
   display: inline-block;
   padding-left: 15px;
@@ -290,7 +297,7 @@ thead {
   margin-bottom: 10px;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .international_box {
   display: inline-block;
   width: 185;
@@ -298,7 +305,7 @@ thead {
   padding-left: 15px;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .details_box {
   display: block;
   width: 370px;
@@ -306,7 +313,7 @@ thead {
   padding-right: 15px;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .add_box {
   width: 75px;
   margin-right: 0px;
@@ -315,20 +322,20 @@ thead {
 }
 
 /* LISTE DE COURS SELECTIONNÉS */
-/* line 306, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 ul {
   padding: 0 0 0 0;
   list-style: none;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .course_item {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-/* line 320, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .total_credits {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -336,7 +343,7 @@ ul {
   text-align: center;
 }
 
-/* line 330, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .total_hours {
   color: #ffffff;
   text-align: center;
