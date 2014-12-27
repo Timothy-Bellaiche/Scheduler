@@ -113,9 +113,13 @@ input[type=text]:focus {
 	height: 18px;
 	padding-left: 20px;
 	display: inline-block;
+	padding-bottom: 6px;
 
 }
 
+.course-list {
+	margin-top: 8px;
+}
 
 .schedule {
   table {
