@@ -42,12 +42,6 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.checkboxCourse.events({
-    "click .toggle-checked": function () {
-      Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
-    }
-  })
-
   Template.coursescheckeddesc.events({
     "click .toggle-checked": function () {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
