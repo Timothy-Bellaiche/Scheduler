@@ -7,13 +7,8 @@
 <body>
     <div class="banner"><img class="logo" alt="easy schedule" src="agenda.png">Scheduler<img alt="easy timetable" src="clock.png" class="logo"></div>
     <div class="container">
-      <!--<div class="search_box">{{>searchBox}}</div><div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>-->
+      <div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>
       {{>searchBox}}
-        <!--<ul>-->
-          <!--{{#each courses}}-->
-            <!--{{>coursedesc}}-->
-          <!--{{/each}}-->
-        <!--</ul>-->
     <div class="schedule">
         <table class="edt" cellspacing="0">
         <thead>
@@ -177,7 +172,7 @@
                 <!--<div class="details timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></td>-->
             <td class="free" id="sat21"></td>
             <td class="free" id="sun21"></td>
-            
+
           </tr>
         </tbody>
       </table>
@@ -185,12 +180,9 @@
       <div class="selected_course_list">
             <div class="course_list_title">Selected courses</div>
                 <ul class="course_list" id="course_list">
-                    <!-- {{#each courseschecked}}
                       {{>coursescheckeddesc}}
-                    {{/each}} -->
-                    <!--<li class="course_item course">IT for networked organizations<div class="details non_timetable">NOM DU COURS NOM DU PROF SALLE CREDITS HEURE FASICULE</div></li>-->
-                    <li class="total_credits">TOTAL CREDITS: to-do</li>
-                    <li class="total_hours">TOTAL HOURS/WEEK: to-do</li>
+                    {{/each}}
+                    {{>totals}}
                     <!--<li class="total_credits">BACK-END BY DAMIEN, FRONT-END BY TIMOTHY, BUSINESS/MARKETING BY MARKUS</li>-->
                 </ul>
             </div>
@@ -233,42 +225,10 @@
               document.getElementById(position).appendChild(descriptionBox);
             }
 
-            function listAdd() {
-             var descriptionBox = document.createElement('div');
-             descriptionBox.className = "details non_timetable";
-             function boxContent(truc,thing,inner) {
-               var boxInfo = document.createElement('div');
-               boxInfo.className = thing;
-               boxInfo.innerHTML = inner;
-               truc.appendChild(boxInfo);
-             }
-             boxContent(descriptionBox,"title_box",coursename);
-             boxContent(descriptionBox,"day_box",day);
-             boxContent(descriptionBox,"hour_box",start+" - "+end);
-             boxContent(descriptionBox,"prof_box","Professor : "+prof);
-             boxContent(descriptionBox,"credits_box","Credits : "+"TO DO");
-             boxContent(descriptionBox,"room_box","Room : "+classroom);
-             boxContent(descriptionBox,"international_box","TO DO");
-             boxContent(descriptionBox,"details_box","Description : "+"TO DO");
-             boxContent(descriptionBox,"add_box","{{> checkboxCourse}}");
-             var newCourse = document.createElement('li');
-             newCourse.className = "course_item course";
-             newCourse.innerHTML = coursename;
-             newCourse.appendChild(descriptionBox);
-             document.getElementById('course_list').insertBefore(newCourse, document.getElementById('course_list').firstChild);
-            }
-
             toggleAdd(start);
             toggleAdd(middle);
             toggleAdd(end);
-            listAdd(coursename);
-
-            $(".course").mouseover(function() {
-              $(this).children(".details").show();
-              }).mouseout(function() {
-              $(this).children(".details").hide();
-              });
-            }
+          }
 
           else {
             function toggleRemove(position) {
@@ -286,19 +246,9 @@
               else {}
             }
 
-            function listRemove() {
-              var listElement = document.getElementsByClassName("course_item");
-                for (var i=0; currentListElement=listElement[i]; i++) {
-                  if (currentListElement.innerHTML.indexOf(coursename) > -1) {
-                    currentListElement.parentNode.removeChild(currentListElement);
-                    break ;}
-                  else {}
-                }
-              } 
             toggleRemove(start);
             toggleRemove(middle);
             toggleRemove(end);
-            listRemove();
           }
         }
     </script>
@@ -313,6 +263,7 @@
 </template>
 
 <template name="coursescheckeddesc">
+<<<<<<< HEAD
 <li class="course_search_result">{{courseName}}, <span style="font-style: italic;">{{prof}}</span> {{day}} : {{startTime}}:10-{{trueEndTime}}:00</li> 
   <div class="checkbox"><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}')"/></div>
 </template>
@@ -333,4 +284,9 @@
     {{#ifEsHasNoResults index="courses"}}
         <div class="no-results">No results found!</div>
     {{/ifEsHasNoResults}}
+</template>
+
+<template name="totals">
+<li class="total_credits">TOTAL CREDITS: {{totalcredits}}</li>
+<li class="total_hours">TOTAL HOURS/WEEK: {{totalhours}}</li>
 </template>

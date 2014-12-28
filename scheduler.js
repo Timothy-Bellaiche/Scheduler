@@ -14,6 +14,25 @@ if (Meteor.isClient) {
     }
   });
 
+  Template.totals.helpers({
+    totalhours: function() {
+      var sumh=0;
+      var cursor=Courses.find({checked: true});
+      cursor.forEach(function(summing){
+        sumh = sumh + summing.trueEndTime - summing.startTime
+      });
+      return sumh;
+    },
+    totalcredits: function() {
+      var sumc=0;
+      var cursor=Courses.find({checked: true});
+      cursor.forEach(function(summing){
+        sumc = sumc + summing.credits
+      });
+      return sumc;
+    }
+  });
+
   Template.body.events({
   });
 
@@ -21,7 +40,7 @@ if (Meteor.isClient) {
     "click .toggle-checked": function () {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
     }
-  })
+  });
 
   Template.checkboxCourse.events({
     "click .toggle-checked": function () {
@@ -33,5 +52,5 @@ if (Meteor.isClient) {
     "click .toggle-checked": function () {
       Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
     }
-  })
+  });
 }
