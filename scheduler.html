@@ -261,7 +261,18 @@
 </template>
 
 <template name="coursescheckeddesc">
-<li class="course_item course">{{courseName}}<div class="details non_timetable">{{courseName}}<br><br>Prof: {{prof}}<br><br>Every {{day}} starts at {{startTime}}:10, ends at {{trueEndTime}}:10<br><br> Classroom: {{classroom}}<br><br><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></div><input type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}','{{credits}}')" /></li>
+<li class="course_item course">{{courseName}}<div class="details non_timetable">
+  <div class="title_box">{{courseName}}</div>
+  <div class="day_box">{{day}}</div>
+  <div class="hour_box">{{startTime}}:10 - {{trueEndTime}}:00</div>
+  <div class="prof_box">Professor: {{prof}}</div>
+  <div class="credits_box">Credits: {{credits}}</div>
+  <div class="room_box">Room: {{classroom}}</div>
+  <input style="-ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  margin-left: 180px;" type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}')" /></div></li>
 </template>
 
 <template name="searchBox">

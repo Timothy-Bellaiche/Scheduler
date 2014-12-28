@@ -7,8 +7,10 @@
 /*GRIS FONCÉ*/
 /* line 12, ../sass/scheduler.scss */
 .logo {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  top: 8px;
 }
 
 /* entypo */
@@ -254,9 +256,6 @@ thead {
   font-size: 15px;
 }
 
-/* line 264, ../sass/scheduler.scss */
-  padding: 20px;
-}
 
 /* line 218, ../sass/style.scss */
 .timetable {
