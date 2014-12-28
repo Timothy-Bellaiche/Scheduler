@@ -275,13 +275,13 @@ thead {
 .day_box {
   display: inline-block;
   padding-left: 15px;
-  width: 185px;
+  width: 180px;
   margin-bottom: 20px;
 }
 
 .hour_box {
   display: inline-block;
-  width: 185px;
+  width: 180px;
   margin-bottom: 20px;
   padding-left: 15px;
 }
@@ -289,13 +289,13 @@ thead {
 .prof_box {
   display: inline-block;
   padding-left: 15px;
-  width: 185px;
+  width: 180px;
   margin-bottom: 20px;
 }
 
 .credits_box {
   display: inline-block;
-  width: 185px;
+  width: 180px;
   margin-bottom: 20px;
   padding-left: 15px;
 }
@@ -303,13 +303,13 @@ thead {
 .room_box {
   display: inline-block;
   padding-left: 15px;
-  width: 185px;
+  width: 180px;
   margin-bottom: 20px;
 }
 
 .international_box {
   display: inline-block;
-  width: 185;
+  width: 180px;
   margin-bottom: 20px;
   padding-left: 15px;
 }
