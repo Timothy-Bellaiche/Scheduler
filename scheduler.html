@@ -2,7 +2,6 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="stylesheets/style.css"/>
         <title>Make an easy Schedule</title>
-        
 </head>
 <body>
     <div class="banner"><img class="logo" alt="easy schedule" src="agenda.png">Scheduler<img alt="easy timetable" src="clock.png" class="logo"></div>
@@ -193,20 +192,24 @@
           if (element.checked) {
             var borderstyle = "2px solid white";
             function toggleAdd(position) {
+              if (document.getElementById(position).className == "class course") {
+                window.alert("Overlapping courses identified.");
+              }
+              else {
               var descriptionBox = document.createElement('div');
               descriptionBox.className = "details timetable";
-              function boxContent(truc,thing,inner) {
+              function boxContent(thing,inner) {
                 var boxInfo = document.createElement('div');
                 boxInfo.className = thing;
                 boxInfo.innerHTML = inner;
-                truc.appendChild(boxInfo);
+                descriptionBox.appendChild(boxInfo);
               }
-              boxContent(descriptionBox,"title_box",coursename);
-              boxContent(descriptionBox,"day_box",day);
-              boxContent(descriptionBox,"hour_box",start+" - "+end);
-              boxContent(descriptionBox,"prof_box","Professor : "+prof);
-              boxContent(descriptionBox,"credits_box","Credits : "+credits);
-              boxContent(descriptionBox,"room_box","Room : "+classroom);
+              boxContent("title_box",coursename);
+              boxContent("day_box",day);
+              boxContent("hour_box",start+" - "+end);
+              boxContent("prof_box","Professor : "+prof);
+              boxContent("credits_box","Credits : "+credits);
+              boxContent("room_box","Room : "+classroom);
 
               document.getElementById(position).className = "class course";
               document.getElementById(position).style.borderLeft = borderstyle;
@@ -222,6 +225,7 @@
               }
               document.getElementById(position).appendChild(descriptionBox);
             }
+          }
 
             toggleAdd(start);
             toggleAdd(middle);
