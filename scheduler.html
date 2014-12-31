@@ -193,7 +193,10 @@
             var borderstyle = "2px solid white";
             function toggleAdd(position) {
               if (document.getElementById(position).className == "class course") {
-                window.alert("Overlapping courses identified.");
+                if (!localStorage["alertdisplayed"]) {
+                  window.alert("Overlapping courses identified.");
+                  localStorage["alertdisplayed"] = true;
+                }
               }
               else {
                 var descriptionBox = document.createElement('div');
