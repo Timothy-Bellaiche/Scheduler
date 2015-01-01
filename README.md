@@ -5,10 +5,12 @@ Easily make a schedule. Built in Meteor.
 
 School project (NCCU - College of Commerce)
 
-How to install:
+How to run:
 ---------------
 
-git clone https://github.com/Timothy-Bellaiche/Scheduler.git && cd Scheduler && meteor
+To install Meteor on OSX and Linux: curl https://install.meteor.com/ | sh
+
+To install Scheduler (after Meteor is installed): git clone https://github.com/Timothy-Bellaiche/Scheduler.git && cd Scheduler && meteor
 
 (will run on port 3000 by default)
 
