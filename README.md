@@ -1,9 +1,18 @@
 Scheduler
 =========
 
-Easily make a schedule for NCCU
+Easily make a schedule. Built in Meteor.
 
 School project (NCCU - College of Commerce)
+
+How to install:
+---------------
+
+git clone https://github.com/Timothy-Bellaiche/Scheduler.git && cd Scheduler && meteor
+
+(will run on port 3000 by default)
+
+Add relevant database to the Meteor app via MongoDB.
 
 Live demo:
 ----------
