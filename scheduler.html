@@ -51,12 +51,7 @@
                 document.getElementById(position).style.borderRight = borderstyle;
 
                 if (start == end && middle == end && start == middle) {
-                  if (position == start) {
-                    document.getElementById(position).className = "class course";
-                  }
-                  else if (position == middle || position == end) {
-                    document.getElementById(position).className = "";
-                  }
+                  document.getElementById(position).className = "class course";
                   document.getElementById(position).style.borderTop = borderstyle;
                   document.getElementById(position).style.borderBottom = borderstyle;
                   document.getElementById(position).innerHTML = coursename+"\n"+classroom;
@@ -91,9 +86,18 @@
               }
             }
 
-            toggleAdd(start);
-            toggleAdd(middle);
-            toggleAdd(end);
+            if (start == end && middle == end && start == middle) {
+              toggleAdd(start);
+            }
+            else if (middle == end) {
+              toggleAdd(start);
+              toggleAdd(middle);
+            }
+            else {
+              toggleAdd(start);
+              toggleAdd(middle);
+              toggleAdd(end);
+            }
           }
 
           else {
@@ -109,7 +113,6 @@
               else if (position == end) {
                 document.getElementById(position).style.borderBottom = "";
               }
-              else {}
             }
 
             toggleRemove(start);
