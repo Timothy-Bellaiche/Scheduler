@@ -27,7 +27,7 @@
             function toggleAdd(position) {
               if (document.getElementById(position).className == "class course") {
                 if (!localStorage["alertdisplayed"]) {
-                  window.alert("Overlapping courses identified.");
+                  window.alert("Overlapping courses identified. Please be careful of any bugs which may follow.");
                   localStorage["alertdisplayed"] = true;
                 }
               }
