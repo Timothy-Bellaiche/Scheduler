@@ -17,7 +17,6 @@
                       {{>coursescheckeddesc}}
                     {{/each}}
                     {{>totals}}
-                    <!--<li class="total_credits">BACK-END BY DAMIEN, FRONT-END BY TIMOTHY, BUSINESS/MARKETING BY MARKUS</li>-->
                 </ul>
             </div>
     <script>
@@ -51,14 +50,36 @@
                 document.getElementById(position).className = "class course";
                 document.getElementById(position).style.borderLeft = borderstyle;
                 document.getElementById(position).style.borderRight = borderstyle;
-                if (position == start) {
+
+                if (start == end && middle == end && start == middle) {
                   document.getElementById(position).style.borderTop = borderstyle;
-                }
-                else if (position == end) {
                   document.getElementById(position).style.borderBottom = borderstyle;
-                }
-                else {
                   document.getElementById(position).innerHTML = coursename+"\n"+classroom;
+                }
+
+                else if (middle == end) {
+                  if (position == start) {
+                    document.getElementById(position).style.borderTop = borderstyle;
+                    document.getElementById(position).innerHTML = coursename;
+                  }
+                  else if (position == middle) {
+                    document.getElementById(position).style.borderBottom = borderstyle;
+                    document.getElementById(position).innerHTML = classroom;
+                  }
+                  else {
+                  }
+                }
+
+                else {
+                  if (position == start) {
+                    document.getElementById(position).style.borderTop = borderstyle;
+                  }
+                  else if (position == end) {
+                    document.getElementById(position).style.borderBottom = borderstyle;
+                  }
+                  else {
+                    document.getElementById(position).innerHTML = coursename+"\n"+classroom;
+                  }
                 }
                 document.getElementById(position).appendChild(descriptionBox);
               }
