@@ -47,25 +47,26 @@
                 boxContent("credits_box","Credits : "+credits);
                 boxContent("room_box","Room : "+classroom);
 
-                document.getElementById(position).className = "class course";
                 document.getElementById(position).style.borderLeft = borderstyle;
                 document.getElementById(position).style.borderRight = borderstyle;
 
                 if (start == end && middle == end && start == middle) {
+                  if (position == start) {
+                    document.getElementById(position).className = "class course";
+                  }
                   document.getElementById(position).style.borderTop = borderstyle;
                   document.getElementById(position).style.borderBottom = borderstyle;
-                  if (position == start) {
                   document.getElementById(position).innerHTML = coursename+"\n"+classroom;
-                  }
-                  else {}
                 }
 
                 else if (middle == end) {
                   if (position == start) {
+                    document.getElementById(position).className = "class course";
                     document.getElementById(position).style.borderTop = borderstyle;
                     document.getElementById(position).innerHTML = coursename;
                   }
                   else if (position == middle) {
+                    document.getElementById(position).className = "class course";
                     document.getElementById(position).style.borderBottom = borderstyle;
                     document.getElementById(position).innerHTML = classroom;
                   }
@@ -74,6 +75,7 @@
                 }
 
                 else {
+                  document.getElementById(position).className = "class course";
                   if (position == start) {
                     document.getElementById(position).style.borderTop = borderstyle;
                   }
