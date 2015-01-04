@@ -118,6 +118,18 @@
 </template>
 
 <template name="trschedule">
+{{#if index=9}}
+<tr class="odd">
+  <td class="free hour">{{index}}:10 - {{indexp}}:00</td>
+  <td class="free" id="mon{{index}}"></td>
+  <td class="free" id="tue{{index}}"></td>
+  <td class="free" id="wed{{index}}"></td>
+  <td class="free" id="thu{{index}}"></td>
+  <td class="free" id="fri{{index}}"></td>
+  <td class="free" id="sat{{index}}"></td>
+  <td class="free" id="sun{{index}}"></td>
+</tr>
+{{else}}
 <tr class="even">
   <td class="free hour">{{index}}:10 - {{indexp}}:00</td>
   <td class="free" id="mon{{index}}"></td>
@@ -128,6 +140,7 @@
   <td class="free" id="sat{{index}}"></td>
   <td class="free" id="sun{{index}}"></td>
 </tr>
+{{/if}}
 </template>
 
 <template name="coursedesc">
