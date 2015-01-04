@@ -54,7 +54,10 @@
                 if (start == end && middle == end && start == middle) {
                   document.getElementById(position).style.borderTop = borderstyle;
                   document.getElementById(position).style.borderBottom = borderstyle;
-                  document.getElementById(start).innerHTML = coursename+"\n"+classroom;
+                  if (position == start) {
+                  document.getElementById(position).innerHTML = coursename+"\n"+classroom;
+                  }
+                  else {}
                 }
 
                 else if (middle == end) {
