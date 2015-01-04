@@ -35,20 +35,20 @@ if (Meteor.isClient) {
 
   Template.schedule.helpers({
     trschedules: [
-      { index: 8, indexp: 9 },
-      { index: 9, indexp: 10 },
-      { index: 10, indexp: 11},
-      { index: 11, indexp: 12},
-      { index: 12, indexp: 13},
-      { index: 13, indexp: 14},
-      { index: 14, indexp: 15},
-      { index: 15, indexp: 16},
-      { index: 16, indexp: 17},
-      { index: 17, indexp: 18},
-      { index: 18, indexp: 19},
-      { index: 19, indexp: 20},
-      { index: 20, indexp: 21},
-      { index: 21, indexp: 22}
+      { index: 8, indexp: 9, oe: "even" },
+      { index: 9, indexp: 10, oe: "odd" },
+      { index: 10, indexp: 11, oe: "even" },
+      { index: 11, indexp: 12, oe: "odd" },
+      { index: 12, indexp: 13, oe: "even" },
+      { index: 13, indexp: 14, oe: "odd" },
+      { index: 14, indexp: 15, oe: "even"},
+      { index: 15, indexp: 16, oe: "odd" },
+      { index: 16, indexp: 17, oe: "even" },
+      { index: 17, indexp: 18, oe: "odd" },
+      { index: 18, indexp: 19, oe: "even" },
+      { index: 19, indexp: 20, oe: "odd" },
+      { index: 20, indexp: 21, oe: "even" },
+      { index: 21, indexp: 22, oe: "odd" }
     ]
   });
 
