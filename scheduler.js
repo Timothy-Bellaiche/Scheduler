@@ -35,7 +35,7 @@ if (Meteor.isClient) {
 
   Template.schedule.helpers({
     trschedules: [
-      { index: 8 },
+      { index: 8, indexp:9 },
       { index: 9 },
       { index: 10 },
       { index: 11 },
