@@ -16,6 +16,8 @@ To install Scheduler (after Meteor is installed): git clone https://github.com/T
 
 Add relevant database to the Meteor app via MongoDB.
 
+Search bar running thanks to https://github.com/matteodem/meteor-easy-search
+
 Live demo:
 ----------
 
@@ -26,6 +28,6 @@ Dev branch: http://188.165.61.14:3000/
 
 To-do
 -----
-Manage 2 and 1 hour long classes
-
 Add international-only classes
+
+Have a real overlapping classes alert
