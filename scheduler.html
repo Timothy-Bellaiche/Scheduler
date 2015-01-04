@@ -54,6 +54,9 @@
                   if (position == start) {
                     document.getElementById(position).className = "class course";
                   }
+                  else if (position == middle || position == end) {
+                    document.getElementById(position).className = "";
+                  }
                   document.getElementById(position).style.borderTop = borderstyle;
                   document.getElementById(position).style.borderBottom = borderstyle;
                   document.getElementById(position).innerHTML = coursename+"\n"+classroom;
@@ -69,8 +72,6 @@
                     document.getElementById(position).className = "class course";
                     document.getElementById(position).style.borderBottom = borderstyle;
                     document.getElementById(position).innerHTML = classroom;
-                  }
-                  else {
                   }
                 }
 
