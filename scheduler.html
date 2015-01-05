@@ -6,7 +6,6 @@
 <body>
     <div class="banner"><img class="logo" alt="easy schedule" src="agenda.png">Scheduler<img alt="easy timetable" src="clock.png" class="logo"></div>
     <div class="container">
-      <div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>
       {{>searchBox}}
     {{>schedule}}
     </div>
@@ -42,7 +41,7 @@
                 }
                 boxContent("title_box",coursename);
                 boxContent("day_box",day);
-                boxContent("hour_box",start+" - "+end);
+                boxContent("hour_box",start.slice(3, 5)+":10 - "+end.slice(3, 5)+":00");
                 boxContent("prof_box","Professor : "+prof);
                 boxContent("credits_box","Credits : "+credits);
                 boxContent("room_box","Room : "+classroom);
