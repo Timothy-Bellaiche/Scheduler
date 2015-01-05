@@ -57,7 +57,10 @@ if (Meteor.isClient) {
 
   Template.coursedesc.events({
     "click .toggle-checked": function () {
-      Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
+      if (courseschecked.startTime == this.startTime && courseschecked.day == this.day) {}
+      else {
+        Courses._collection.update(this._id, {$set: {checked: ! this.checked}});
+      }
     }
   });
 
