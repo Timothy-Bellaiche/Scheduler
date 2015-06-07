@@ -21,9 +21,7 @@ Search bar running thanks to https://github.com/matteodem/meteor-easy-search
 Live demo:
 ----------
 
-Master branch: http://188.165.61.14/ (www.scheduler.tk)
-
-Dev branch: http://188.165.61.14:3000/
+Master branch: http://188.165.61.14:8080/
 
 
 To-do
