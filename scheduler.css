@@ -370,4 +370,5 @@ tr td:hover .details{
   color: #FFB884;
   text-align: center;
   position: relative;
+  padding: 0;
 }
