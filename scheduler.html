@@ -31,7 +31,7 @@
             function toggleAdd(position) {
               if (document.getElementById(position).className == "class course") {
                 if (!localStorage["alertdisplayed"]) {
-                  window.alert("Overlapping courses identified. Please be careful of any bugs which may follow.");
+                  window.alert("Overlapping courses identified. Please uncheck this course");
                   localStorage["alertdisplayed"] = true;
                 }
               }
@@ -173,7 +173,7 @@
   -o-transform: scale(1.5);" type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}','{{credits}}')"/></div></li>
 </template>
 
-<!-- COURSE LIST -->
+<!-- COURSE LIST BOX-->
 <template name="coursescheckeddesc">
 <li class="course_item course">{{courseName}}<div class="details non_timetable">
   <div class="title_box">{{courseName}}</div>
