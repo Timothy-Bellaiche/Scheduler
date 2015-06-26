@@ -6,7 +6,6 @@
 <body>
     <div class="banner"><img class="logo" alt="easy schedule" src="agenda.png">Scheduler<img alt="easy timetable" src="clock.png" class="logo"></div>
     <div class="container">
-      <div style="display: inline-block; margin-left: 10px; color: #ABABAB;" class="entypo-search"></div>
       {{>searchBox}}
     {{>schedule}}
     </div>
@@ -19,6 +18,10 @@
                     {{>totals}}
                 </ul>
             </div>
+      <div class="footer">
+        <p class="footer_text">Front end : <a href="http://www.linkedin.com/timothybellaiche" title="Timothy Bellaiche Linkedin">Timothy Bellaiche</a></p>
+        <p class="footer_text">Back end : <a href="http://www.linkedin.com/damiengonot" title="Damien Gonot Linkedin">Damien Gonot</a></p>
+        <p class="footer_text">Powered by MeteorJS and MongoDB</p>
     <script>
         function functionToggle(element,start,middle,end,coursename,classroom,prof,day,credits) {
 
@@ -160,6 +163,7 @@
 </tr>
 </template>
 
+<!-- SEARCH RESULTS -->
 <template name="coursedesc">
 <li class="course-list"><div class="course_search_result">{{courseName}}<br />
   <span style="font-style: italic;">{{prof}}</span> | {{day}} : {{startTime}}:10-{{trueEndTime}}:00</div><div class="checkbox"><input style="-ms-transform: scale(1.5);
@@ -168,6 +172,7 @@
   -o-transform: scale(1.5);" type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}','{{credits}}')"/></div></li>
 </template>
 
+<!-- COURSE LIST -->
 <template name="coursescheckeddesc">
 <li class="course_item course">{{courseName}}<div class="details non_timetable">
   <div class="title_box">{{courseName}}</div>

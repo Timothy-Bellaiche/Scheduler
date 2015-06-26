@@ -27,7 +27,6 @@ body {
 
 .banner {
   font-size: 50px;
-  background-color: red;
   background-color: #FFB884;
   color: #FFFFFF;
   width: 100%;
@@ -357,4 +356,18 @@ tr td:hover .details{
 .total_hours {
   color: #ffffff;
   text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.footer_text {
+  font-size: 14px;
+  color: #FFB884;
+  text-align: center;
+  position: absolute;
 }
