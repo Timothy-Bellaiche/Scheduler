@@ -361,7 +361,7 @@ tr td:hover .details{
 /* FOOTER */
 
 .footer {
-  background-color: #ffffff;
+  background-color: #ABABAB;
   width: 100%;
 }
 
@@ -369,5 +369,5 @@ tr td:hover .details{
   font-size: 14px;
   color: #FFB884;
   text-align: center;
-  position: absolute;
+  position: relative;
 }
