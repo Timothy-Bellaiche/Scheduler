@@ -22,6 +22,7 @@
         <p class="footer_text">Front end : <a href="http://www.linkedin.com/timothybellaiche" title="Timothy Bellaiche Linkedin">Timothy Bellaiche</a></p>
         <p class="footer_text">Back end : <a href="http://www.linkedin.com/damiengonot" title="Damien Gonot Linkedin">Damien Gonot</a></p>
         <p class="footer_text">Powered by MeteorJS and MongoDB</p>
+      </div>
     <script>
         function functionToggle(element,start,middle,end,coursename,classroom,prof,day,credits) {
 
@@ -189,6 +190,8 @@
   left: 20px;" type="checkbox" checked="{{checked}}" class="toggle-checked" onclick="functionToggle(this,'{{day}}{{startTime}}','{{day}}{{middleTime}}','{{day}}{{endTime}}','{{courseName}}','{{classroom}}','{{prof}}','{{day}}','{{credits}}')"/></div></li>
 </template>
 
+
+<!-- SEARCHBOX -->
 <template name="searchBox">
     {{> esInput index="courses" placeholder="Search by course name" }}
     <div class="search_icon"><div style="color: white;" class="entypo-search"></div></div>
